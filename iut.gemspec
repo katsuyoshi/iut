@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Iut::VERSION
   s.authors     = ["Katsuyoshi Ito"]
   s.email       = ["kito@itosoft.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/katsuyoshi/iunittest"
   s.summary     = %q{It generates a iUnitTest test project for Xcode 4.x.}
   s.description = %q{After Xcode 4 released, the format of template project was changed. The aim of this command is to make a iUnitTest test project easily. }
 
