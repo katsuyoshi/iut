@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Katsuyoshi Ito"]
   s.email       = ["kito@itosoft.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{It generates a iUnitTest test project for Xcode 4.x.}
+  s.description = %q{After Xcode 4 released, the format of template project was changed. The aim of this command is to make a iUnitTest test project easily. }
 
   s.rubyforge_project = "iut"
 
