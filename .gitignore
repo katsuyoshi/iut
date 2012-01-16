@@ -6,3 +6,4 @@ pkg/*
 *.xcworkspace
 .rvmrc
 .gemrc
+xcuserdata
