@@ -1,7 +1,17 @@
-#!/usr/bin/env ruby
+# -*- encoding:UTF-8 -*-
 require "iut/version"
+require "iut/generator"
 
-module Iut
-  puts "this is my first gem."
-  # Your code goes here...
+Version = Iut::VERSION
+
+opt = OptionParser.new
+opt.banner = "Usage: #{$0} TEST_PROJECT_NAME"
+#opt.on('-h', '--help', 'show this help message and exit') {|v| }
+opt.parse!(ARGV)
+
+if ARGV.size == 0
+  ARGV.unshift "--help"
+  opt.parse!(ARGV)
 end
+
+Iut::Generator::Project.generate
