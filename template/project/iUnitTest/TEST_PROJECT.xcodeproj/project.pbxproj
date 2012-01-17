@@ -41,8 +41,6 @@
 		469B334114B42F420041CAF8 /* SourceCodeOpener.m in Sources */ = {isa = PBXBuildFile; fileRef = 469B332514B42F420041CAF8 /* SourceCodeOpener.m */; };
 		469B334714B431B00041CAF8 /* IUTMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469B334614B431B00041CAF8 /* IUTMainWindow.xib */; };
 		469B334A14B432260041CAF8 /* IUTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 469B334914B432250041CAF8 /* IUTAppDelegate.m */; };
-		469B335314B438710041CAF8 /* .do_not_remove_this_directory in Resources */ = {isa = PBXBuildFile; fileRef = 469B335014B438710041CAF8 /* .do_not_remove_this_directory */; };
-		469B335414B438710041CAF8 /* .do_not_remove_this_directory in Resources */ = {isa = PBXBuildFile; fileRef = 469B335214B438710041CAF8 /* .do_not_remove_this_directory */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,10 +48,10 @@
 		469B32D514B42CFF0041CAF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		469B32D714B42CFF0041CAF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		469B32D914B42CFF0041CAF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		469B32DD14B42CFF0041CAF8 /* TEST_PROJECT-Info.plist */ = {isa = PBXFileReference; path = "TEST_PROJECT-Info.plist"; sourceTree = "<group>"; };
+		469B32DD14B42CFF0041CAF8 /* TEST_PROJECT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TEST_PROJECT-Info.plist"; sourceTree = "<group>"; };
 		469B32DF14B42CFF0041CAF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		469B32E114B42CFF0041CAF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		469B32E314B42CFF0041CAF8 /* TEST_PROJECT-Prefix.pch */ = {isa = PBXFileReference; path = "TEST_PROJECT-Prefix.pch"; sourceTree = "<group>"; };
+		469B32E314B42CFF0041CAF8 /* TEST_PROJECT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TEST_PROJECT-Prefix.pch"; sourceTree = "<group>"; };
 		469B32F114B42F420041CAF8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		469B32F214B42F420041CAF8 /* isd_logo_60x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isd_logo_60x40.png; sourceTree = "<group>"; };
 		469B32F314B42F420041CAF8 /* isd_logo_60x40_w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isd_logo_60x40_w.png; sourceTree = "<group>"; };
@@ -108,8 +106,6 @@
 		469B334614B431B00041CAF8 /* IUTMainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IUTMainWindow.xib; sourceTree = "<group>"; };
 		469B334814B432250041CAF8 /* IUTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUTAppDelegate.h; sourceTree = "<group>"; };
 		469B334914B432250041CAF8 /* IUTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUTAppDelegate.m; sourceTree = "<group>"; };
-		469B335014B438710041CAF8 /* .do_not_remove_this_directory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .do_not_remove_this_directory; sourceTree = "<group>"; };
-		469B335214B438710041CAF8 /* .do_not_remove_this_directory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .do_not_remove_this_directory; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,7 +260,6 @@
 		469B334F14B438710041CAF8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				469B335014B438710041CAF8 /* .do_not_remove_this_directory */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -272,7 +267,6 @@
 		469B335114B438710041CAF8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				469B335214B438710041CAF8 /* .do_not_remove_this_directory */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -337,8 +331,6 @@
 				469B332C14B42F420041CAF8 /* IUTTestView.xib in Resources */,
 				469B332D14B42F420041CAF8 /* Settings.bundle in Resources */,
 				469B334714B431B00041CAF8 /* IUTMainWindow.xib in Resources */,
-				469B335314B438710041CAF8 /* .do_not_remove_this_directory in Resources */,
-				469B335414B438710041CAF8 /* .do_not_remove_this_directory in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
