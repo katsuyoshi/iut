@@ -46,14 +46,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		469B32D114B42CFF0041CAF8 /* iUnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iUnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		469B32D114B42CFF0041CAF8 /* TEST_PROJECT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEST_PROJECT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469B32D514B42CFF0041CAF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		469B32D714B42CFF0041CAF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		469B32D914B42CFF0041CAF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		469B32DD14B42CFF0041CAF8 /* iUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iUnitTest-Info.plist"; sourceTree = "<group>"; };
+		469B32DD14B42CFF0041CAF8 /* TEST_PROJECT-Info.plist */ = {isa = PBXFileReference; path = "TEST_PROJECT-Info.plist"; sourceTree = "<group>"; };
 		469B32DF14B42CFF0041CAF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		469B32E114B42CFF0041CAF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		469B32E314B42CFF0041CAF8 /* iUnitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iUnitTest-Prefix.pch"; sourceTree = "<group>"; };
+		469B32E314B42CFF0041CAF8 /* TEST_PROJECT-Prefix.pch */ = {isa = PBXFileReference; path = "TEST_PROJECT-Prefix.pch"; sourceTree = "<group>"; };
 		469B32F114B42F420041CAF8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		469B32F214B42F420041CAF8 /* isd_logo_60x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isd_logo_60x40.png; sourceTree = "<group>"; };
 		469B32F314B42F420041CAF8 /* isd_logo_60x40_w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isd_logo_60x40_w.png; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		469B32D214B42CFF0041CAF8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				469B32D114B42CFF0041CAF8 /* iUnitTest.app */,
+				469B32D114B42CFF0041CAF8 /* TEST_PROJECT.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,10 +167,10 @@
 		469B32DC14B42CFF0041CAF8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				469B32DD14B42CFF0041CAF8 /* iUnitTest-Info.plist */,
+				469B32DD14B42CFF0041CAF8 /* TEST_PROJECT-Info.plist */,
 				469B32DE14B42CFF0041CAF8 /* InfoPlist.strings */,
 				469B32E114B42CFF0041CAF8 /* main.m */,
-				469B32E314B42CFF0041CAF8 /* iUnitTest-Prefix.pch */,
+				469B32E314B42CFF0041CAF8 /* TEST_PROJECT-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -280,9 +280,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		469B32D014B42CFF0041CAF8 /* iUnitTest */ = {
+		469B32D014B42CFF0041CAF8 /* TEST_PROJECT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 469B32E914B42CFF0041CAF8 /* Build configuration list for PBXNativeTarget "iUnitTest" */;
+			buildConfigurationList = 469B32E914B42CFF0041CAF8 /* Build configuration list for PBXNativeTarget "TEST_PROJECT" */;
 			buildPhases = (
 				469B32CD14B42CFF0041CAF8 /* Sources */,
 				469B32CE14B42CFF0041CAF8 /* Frameworks */,
@@ -292,9 +292,9 @@
 			);
 			dependencies = (
 			);
-			name = iUnitTest;
+			name = TEST_PROJECT;
 			productName = iUnitTest;
-			productReference = 469B32D114B42CFF0041CAF8 /* iUnitTest.app */;
+			productReference = 469B32D114B42CFF0041CAF8 /* TEST_PROJECT.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -306,7 +306,7 @@
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "ITO SOFT DESIGN Inc.";
 			};
-			buildConfigurationList = 469B32CB14B42CFF0041CAF8 /* Build configuration list for PBXProject "iUnitTest" */;
+			buildConfigurationList = 469B32CB14B42CFF0041CAF8 /* Build configuration list for PBXProject "TEST_PROJECT" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -318,7 +318,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				469B32D014B42CFF0041CAF8 /* iUnitTest */,
+				469B32D014B42CFF0041CAF8 /* TEST_PROJECT */,
 			);
 		};
 /* End PBXProject section */
@@ -435,9 +435,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iUnitTest/iUnitTest-Prefix.pch";
-				INFOPLIST_FILE = "iUnitTest/iUnitTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "iUnitTest/TEST_PROJECT-Prefix.pch";
+				INFOPLIST_FILE = "iUnitTest/TEST_PROJECT-Info.plist";
+				PRODUCT_NAME = TEST_PROJECT;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -446,9 +446,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iUnitTest/iUnitTest-Prefix.pch";
-				INFOPLIST_FILE = "iUnitTest/iUnitTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "iUnitTest/TEST_PROJECT-Prefix.pch";
+				INFOPLIST_FILE = "iUnitTest/TEST_PROJECT-Info.plist";
+				PRODUCT_NAME = TEST_PROJECT;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -456,7 +456,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		469B32CB14B42CFF0041CAF8 /* Build configuration list for PBXProject "iUnitTest" */ = {
+		469B32CB14B42CFF0041CAF8 /* Build configuration list for PBXProject "TEST_PROJECT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				469B32E714B42CFF0041CAF8 /* Debug */,
@@ -465,7 +465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		469B32E914B42CFF0041CAF8 /* Build configuration list for PBXNativeTarget "iUnitTest" */ = {
+		469B32E914B42CFF0041CAF8 /* Build configuration list for PBXNativeTarget "TEST_PROJECT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				469B32EA14B42CFF0041CAF8 /* Debug */,
