@@ -3,9 +3,10 @@ $:.unshift(File.expand_path(File.dirname(__FILE__))) unless
     $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
 
 require "iut/version"
+require "iut/template_version"
 require "iut/generator"
 
-Version = Iut::VERSION
+Version = "#{Iut::VERSION} (template #{Iut::TEMPLATE_VERSION})"
 
 opt = OptionParser.new
 opt.banner = "Usage: #{$0} TEST_PROJECT_NAME"
