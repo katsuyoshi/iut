@@ -14,6 +14,10 @@ Dir.chdir(dst_path) do
   # clone source
   unless File.exist? "iunittest"
     system "git clone git@github.com:katsuyoshi/iunittest.git"
+  else
+    Dir.chdir("iunittest") do
+      system "git pull"
+    end
   end
 
   # copty to template
