@@ -11,9 +11,9 @@ require "arc"
 class TestArc < Test::Unit::TestCase
 
   def setup
-    @project_path = File.join(File.expand_path(File.dirname(__FILE__)), "files", "IUTTest")
+    project_path = File.join(File.expand_path(File.dirname(__FILE__)), "files", "IUTTest")
     @arc = Iut::Arc.new
-    @arc.project_path = @project_path
+    @arc.project_path = project_path
   end
   
   
