@@ -13,6 +13,14 @@
 		46D7787F14FD9C28000FC2D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46D7787D14FD9C28000FC2D2 /* InfoPlist.strings */; };
 		46D7788114FD9C28000FC2D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7788014FD9C28000FC2D2 /* main.m */; };
 		46D7788514FD9C28000FC2D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7788414FD9C28000FC2D2 /* AppDelegate.m */; };
+		46D7789114FD9DC9000FC2D2 /* Arc.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7789014FD9DC9000FC2D2 /* Arc.m */; };
+		46D7789514FD9E00000FC2D2 /* NonArcCaseDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7789414FD9E00000FC2D2 /* NonArcCaseDealloc.m */; };
+		46D7789814FD9F51000FC2D2 /* NonArcWithPropertyCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7789714FD9F51000FC2D2 /* NonArcWithPropertyCopy.m */; };
+		46D7789B14FD9F96000FC2D2 /* NonArcWithPropertyRetain.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7789A14FD9F96000FC2D2 /* NonArcWithPropertyRetain.m */; };
+		46D7789E14FD9FBC000FC2D2 /* NonArcWithAutoreleaseInMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7789D14FD9FBC000FC2D2 /* NonArcWithAutoreleaseInMethod.m */; };
+		46D778A114FD9FE2000FC2D2 /* ArcWithRetainInComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D778A014FD9FE2000FC2D2 /* ArcWithRetainInComment.m */; };
+		46D778A414FDA0B5000FC2D2 /* NonArcWithReleaseInMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D778A314FDA0B5000FC2D2 /* NonArcWithReleaseInMethod.m */; };
+		46D778A714FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D778A614FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,22 @@
 		46D7788214FD9C28000FC2D2 /* IUTTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IUTTest-Prefix.pch"; sourceTree = "<group>"; };
 		46D7788314FD9C28000FC2D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46D7788414FD9C28000FC2D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46D7788F14FD9DC9000FC2D2 /* Arc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arc.h; sourceTree = "<group>"; };
+		46D7789014FD9DC9000FC2D2 /* Arc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arc.m; sourceTree = "<group>"; };
+		46D7789314FD9E00000FC2D2 /* NonArcCaseDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonArcCaseDealloc.h; sourceTree = "<group>"; };
+		46D7789414FD9E00000FC2D2 /* NonArcCaseDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonArcCaseDealloc.m; sourceTree = "<group>"; };
+		46D7789614FD9F51000FC2D2 /* NonArcWithPropertyCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonArcWithPropertyCopy.h; sourceTree = "<group>"; };
+		46D7789714FD9F51000FC2D2 /* NonArcWithPropertyCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonArcWithPropertyCopy.m; sourceTree = "<group>"; };
+		46D7789914FD9F96000FC2D2 /* NonArcWithPropertyRetain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonArcWithPropertyRetain.h; sourceTree = "<group>"; };
+		46D7789A14FD9F96000FC2D2 /* NonArcWithPropertyRetain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonArcWithPropertyRetain.m; sourceTree = "<group>"; };
+		46D7789C14FD9FBC000FC2D2 /* NonArcWithAutoreleaseInMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonArcWithAutoreleaseInMethod.h; sourceTree = "<group>"; };
+		46D7789D14FD9FBC000FC2D2 /* NonArcWithAutoreleaseInMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonArcWithAutoreleaseInMethod.m; sourceTree = "<group>"; };
+		46D7789F14FD9FE1000FC2D2 /* ArcWithRetainInComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcWithRetainInComment.h; sourceTree = "<group>"; };
+		46D778A014FD9FE2000FC2D2 /* ArcWithRetainInComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcWithRetainInComment.m; sourceTree = "<group>"; };
+		46D778A214FDA0B5000FC2D2 /* NonArcWithReleaseInMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonArcWithReleaseInMethod.h; sourceTree = "<group>"; };
+		46D778A314FDA0B5000FC2D2 /* NonArcWithReleaseInMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonArcWithReleaseInMethod.m; sourceTree = "<group>"; };
+		46D778A514FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LooksArcButSuperDoesNotUse.h; sourceTree = "<group>"; };
+		46D778A614FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LooksArcButSuperDoesNotUse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +99,22 @@
 				46D7788314FD9C28000FC2D2 /* AppDelegate.h */,
 				46D7788414FD9C28000FC2D2 /* AppDelegate.m */,
 				46D7787B14FD9C28000FC2D2 /* Supporting Files */,
+				46D7788F14FD9DC9000FC2D2 /* Arc.h */,
+				46D7789014FD9DC9000FC2D2 /* Arc.m */,
+				46D7789314FD9E00000FC2D2 /* NonArcCaseDealloc.h */,
+				46D7789414FD9E00000FC2D2 /* NonArcCaseDealloc.m */,
+				46D7789614FD9F51000FC2D2 /* NonArcWithPropertyCopy.h */,
+				46D7789714FD9F51000FC2D2 /* NonArcWithPropertyCopy.m */,
+				46D7789914FD9F96000FC2D2 /* NonArcWithPropertyRetain.h */,
+				46D7789A14FD9F96000FC2D2 /* NonArcWithPropertyRetain.m */,
+				46D7789C14FD9FBC000FC2D2 /* NonArcWithAutoreleaseInMethod.h */,
+				46D7789D14FD9FBC000FC2D2 /* NonArcWithAutoreleaseInMethod.m */,
+				46D778A214FDA0B5000FC2D2 /* NonArcWithReleaseInMethod.h */,
+				46D778A314FDA0B5000FC2D2 /* NonArcWithReleaseInMethod.m */,
+				46D7789F14FD9FE1000FC2D2 /* ArcWithRetainInComment.h */,
+				46D778A014FD9FE2000FC2D2 /* ArcWithRetainInComment.m */,
+				46D778A514FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.h */,
+				46D778A614FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.m */,
 			);
 			path = IUTTest;
 			sourceTree = "<group>";
@@ -154,6 +194,14 @@
 			files = (
 				46D7788114FD9C28000FC2D2 /* main.m in Sources */,
 				46D7788514FD9C28000FC2D2 /* AppDelegate.m in Sources */,
+				46D7789114FD9DC9000FC2D2 /* Arc.m in Sources */,
+				46D7789514FD9E00000FC2D2 /* NonArcCaseDealloc.m in Sources */,
+				46D7789814FD9F51000FC2D2 /* NonArcWithPropertyCopy.m in Sources */,
+				46D7789B14FD9F96000FC2D2 /* NonArcWithPropertyRetain.m in Sources */,
+				46D7789E14FD9FBC000FC2D2 /* NonArcWithAutoreleaseInMethod.m in Sources */,
+				46D778A114FD9FE2000FC2D2 /* ArcWithRetainInComment.m in Sources */,
+				46D778A414FDA0B5000FC2D2 /* NonArcWithReleaseInMethod.m in Sources */,
+				46D778A714FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +303,7 @@
 				46D7788A14FD9C28000FC2D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
