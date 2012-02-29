@@ -10,4 +10,8 @@
 
 @interface ArcWithRetainInComment : NSObject
 
+// @property (retain, nonatomic) NSString *foo;
+
+/* @property (retain, nonatomic) NSString *bar; */
+
 @end

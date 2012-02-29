@@ -5,4 +5,5 @@ gemspec
 
 group :test do
   gem "test-unit"
+  gem "kagemusha"
 end
