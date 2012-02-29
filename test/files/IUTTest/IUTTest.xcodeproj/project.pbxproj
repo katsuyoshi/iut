@@ -20,6 +20,7 @@
 		46D7789E14FD9FBC000FC2D2 /* NonArcWithAutoreleaseInMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7789D14FD9FBC000FC2D2 /* NonArcWithAutoreleaseInMethod.m */; };
 		46D778A114FD9FE2000FC2D2 /* ArcWithRetainInComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D778A014FD9FE2000FC2D2 /* ArcWithRetainInComment.m */; };
 		46D778A414FDA0B5000FC2D2 /* NonArcWithReleaseInMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D778A314FDA0B5000FC2D2 /* NonArcWithReleaseInMethod.m */; };
+		46D778A714FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D778A614FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		46D778A014FD9FE2000FC2D2 /* ArcWithRetainInComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcWithRetainInComment.m; sourceTree = "<group>"; };
 		46D778A214FDA0B5000FC2D2 /* NonArcWithReleaseInMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonArcWithReleaseInMethod.h; sourceTree = "<group>"; };
 		46D778A314FDA0B5000FC2D2 /* NonArcWithReleaseInMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonArcWithReleaseInMethod.m; sourceTree = "<group>"; };
+		46D778A514FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LooksArcButSuperDoesNotUse.h; sourceTree = "<group>"; };
+		46D778A614FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LooksArcButSuperDoesNotUse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				46D778A314FDA0B5000FC2D2 /* NonArcWithReleaseInMethod.m */,
 				46D7789F14FD9FE1000FC2D2 /* ArcWithRetainInComment.h */,
 				46D778A014FD9FE2000FC2D2 /* ArcWithRetainInComment.m */,
+				46D778A514FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.h */,
+				46D778A614FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.m */,
 			);
 			path = IUTTest;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				46D7789E14FD9FBC000FC2D2 /* NonArcWithAutoreleaseInMethod.m in Sources */,
 				46D778A114FD9FE2000FC2D2 /* ArcWithRetainInComment.m in Sources */,
 				46D778A414FDA0B5000FC2D2 /* NonArcWithReleaseInMethod.m in Sources */,
+				46D778A714FE8166000FC2D2 /* LooksArcButSuperDoesNotUse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

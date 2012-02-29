@@ -13,38 +13,40 @@ module Iut
     end
     
     def nonarc? class_name
+      return false if class_name == "NSObject"
+      
+      super_name = "NSObject"
+      
       Dir.chdir self.project_path do
         Dir.glob("**/#{class_name}\.[hm]") do |f|
           context = File.read f
-          # remove comment
+          # remove comments
           context.gsub! /\/\/.*\n/, ""
           context.gsub! /\/\*.*\*\//m, ""
-          # remove space
+          # remove spaces
           context.gsub! /\s+/, " "
 
-          case f[-1, 1]
-          when "h"
+          case f[-2, 2]
+          when /.h/i
+            # get a name of super class
+            a = context.scan(/@interface.*:\s([^\s]+)/)
+            super_name = a.first.first if a.first
+            
             case context
             when /@property\s*\(.*copy(\s*|\]|\))/,
                  /@property\s*\(.*retain(\s*|\]|\))/
               return true
-            else
-              false
             end
-          when "m"
+          when /.m/i
             case context
             when /\s+dealloc(\s*|\])/, /\s+autorelease(\s*|\])/,
                  /\s+dealloc(\s*|\])/, /\s+release(\s*|\])/
               return true
-            else
-              false
             end
-          else
-            false
           end
         end
       end
-      false
+      nonarc? super_name
     end
     
     def arc? class_name
