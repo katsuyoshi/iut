@@ -37,6 +37,10 @@ class TestArc < Test::Unit::TestCase
     assert(@arc.nonarc?("NonArcWithReleaseInMethod"))
   end
 
+  def test_arc_should_be_arc
+    assert(@arc.arc?("Arc"))
+  end
+
   def test_arc_with_retain_in_comment_should_be_arc
     assert(@arc.arc?("ArcWithRetainInComment"))
   end
