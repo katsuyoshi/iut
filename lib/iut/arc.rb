@@ -90,12 +90,3 @@ module Iut
   end
 
 end
-
-
-#-		46D7788514FD9C28000FC2D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7788414FD9C28000FC2D2 /* AppDelegate.m */; };
-#+		46D7788514FD9C28000FC2D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7788414FD9C28000FC2D2 /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-
-
-# "\t\t46D7788514FD9C28000FC2D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7788414FD9C28000FC2D2 /* AppDelegate.m */; settings = {COMPILER_FLAGS = \"-fno-objc-arc\"; }; };\n"
-# "\t\t46D7788514FD9C28000FC2D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7788414FD9C28000FC2D2 /* AppDelegate.m */; };\n"
-
