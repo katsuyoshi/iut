@@ -23,9 +23,9 @@ Commands are:
   arc revert  Revert a previous arc command
 
 ex)
- $ iut TestProject    # It makes iUnitTest's empty project TestProject.
- $ iut arc            # Set a compile flag to use ARC.
- $ iut arc revert     # Revert a previous arc command.
+ $ iut TestProject    It makes iUnitTest's empty project TestProject.
+ $ iut arc            Set a compile flag to use ARC.
+ $ iut arc revert     Revert a previous arc command.
 
 EOF
 
