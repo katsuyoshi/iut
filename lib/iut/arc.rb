@@ -97,7 +97,9 @@ module Iut
           files << f if /project.pbxproj.\d{8}\-\d{6}/ =~ f
         end
         unless files.size == 0
-          FileUtils.cp files.sort.reverse.first, Dir.glob("**/project.pbxproj").first
+          f = files.sort.reverse.first
+          FileUtils.cp f, Dir.glob("**/project.pbxproj").first
+          FileUtils.rm f
         end
       end
     end

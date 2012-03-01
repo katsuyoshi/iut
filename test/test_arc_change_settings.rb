@@ -56,8 +56,7 @@ class TestArcChangeSettings < Test::Unit::TestCase
   def test_arc_make_backup
     @arc.change_project_settings
     Dir.chdir @arc.project_path do
-      files = Dir.glob("**/project.pbxproj.2*")
-      assert_equal 1, files.size
+      assert_equal 1, Dir.glob("**/project.pbxproj.2*").size
     end
   end
   
@@ -66,6 +65,7 @@ class TestArcChangeSettings < Test::Unit::TestCase
     @arc.revert
     Dir.chdir @arc.project_path do
       assert_equal File.read("IUTTest.xcodeproj/project.pbxproj.org"), File.read("IUTTest.xcodeproj/project.pbxproj")
+      assert_equal 0, Dir.glob("**/project.pbxproj.2*").size
     end
   end
   
