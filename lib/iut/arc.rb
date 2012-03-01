@@ -104,6 +104,20 @@ module Iut
       end
     end
     
+    def clean
+      Dir.chdir self.project_path do
+        files = []
+        Dir.glob("**/project.pbxproj.*") do |f|
+          files << f if /project.pbxproj.\d{8}\-\d{6}/ =~ f
+        end
+        unless files.size == 0
+          files.each do |f|
+            FileUtils.rm f
+          end
+        end
+      end
+    end
+    
     def self.parse
       opt = OptionParser.new
       options = {}
@@ -116,6 +130,8 @@ module Iut
       case ARGV[1]
       when /revert/
         arc.revert
+      when /clean/
+        arc.clean
       else
         arc.change_project_settings
       end

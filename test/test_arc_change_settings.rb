@@ -69,6 +69,14 @@ class TestArcChangeSettings < Test::Unit::TestCase
     end
   end
   
+  def test_clean
+    @arc.change_project_settings
+    @arc.clean
+    Dir.chdir @arc.project_path do
+      assert_equal 0, Dir.glob("**/project.pbxproj.2*").size
+    end
+  end
+  
   def test_arc_parse_revert
     @arc.change_project_settings
     ARGV.replace ['arc', 'revert', '-p', @arc.project_path]
