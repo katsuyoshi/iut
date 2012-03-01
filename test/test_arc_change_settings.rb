@@ -22,7 +22,7 @@ class TestArc < Test::Unit::TestCase
     end
   end
   
-  def test_project_file
+  def test_change_project_settings
     @arc.change_project_settings
     Dir.chdir @arc.project_path do
       actual = File.read("IUTTest.xcodeproj/project.pbxproj").split("\n")
@@ -34,5 +34,12 @@ class TestArc < Test::Unit::TestCase
     end
   end
   
+  def test_change_project_settings_twice
+    @arc.change_project_settings
+    @arc.change_project_settings
+    Dir.chdir @arc.project_path do
+      assert_equal File.read("IUTTest.xcodeproj/project.pbxproj.expected"), File.read("IUTTest.xcodeproj/project.pbxproj")
+    end
+  end
 end
 
