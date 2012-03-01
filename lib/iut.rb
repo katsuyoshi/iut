@@ -5,6 +5,7 @@ $:.unshift(File.expand_path(File.dirname(__FILE__))) unless
 require "iut/version"
 require "iut/template_version"
 require "iut/generator"
+require "iut/arc"
 
 Version = "#{Iut::VERSION} (template #{Iut::TEMPLATE_VERSION})"
 
@@ -39,7 +40,7 @@ end
 
 case argv[0]
 when /arc/
-  Iut::Arc.new.parse
+  Iut::Arc.parse
 else
   Iut::Generator::Project.generate
 end
