@@ -17,34 +17,33 @@ module Iut
       
       super_name = "NSObject"
       
-      Dir.chdir self.project_path do
-        Dir.glob("**/#{class_name}\.[hm]") do |f|
-          context = File.read f
-          # remove comments
-          context.gsub! /\/\/.*\n/, ""
-          context.gsub! /\/\*.*\*\//m, ""
-          # remove spaces
-          context.gsub! /\s+/, " "
+      Dir.glob("**/#{class_name}\.[hm]") do |f|
+        context = File.read f
+        # remove comments
+        context.gsub! /\/\/.*\n/, ""
+        context.gsub! /\/\*.*\*\//m, ""
+        # remove spaces
+        context.gsub! /\s+/, " "
 
-          case f[-2, 2]
-          when /.h/i
-            # get a name of super class
-            a = context.scan(/@interface.*:\s(\S+)/)
-            super_name = a.first.first if a.first
-            
-            case context
-            when /@property\s*\(.*copy(\s*|\]|\))/,
-                 /@property\s*\(.*retain(\s*|\]|\))/
-              return true
-            end
-          when /.m/i
-            case context
-            when /\s+dealloc(\s*|\])/, /\s+autorelease(\s*|\])/,
-                 /\s+dealloc(\s*|\])/, /\s+release(\s*|\])/
-              return true
-            end
+        case f[-2, 2]
+        when /.h/i
+          # get a name of super class
+          a = context.scan(/@interface.*:\s(\S+)/)
+          super_name = a.first.first if a.first
+          
+          case context
+          when /@property\s*\(.*copy(\s*|\]|\))/,
+               /@property\s*\(.*retain(\s*|\]|\))/
+            return true
+          end
+        when /.m/i
+          case context
+          when /\s+dealloc(\s*|\])/, /\s+autorelease(\s*|\])/,
+               /\s+dealloc(\s*|\])/, /\s+release(\s*|\])/
+            return true
           end
         end
+
       end
       nonarc? super_name
     end

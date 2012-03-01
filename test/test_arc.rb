@@ -14,6 +14,13 @@ class TestArc < Test::Unit::TestCase
     project_path = File.join(File.expand_path(File.dirname(__FILE__)), "files", "IUTTest")
     @arc = Iut::Arc.new
     @arc.project_path = project_path
+
+    @pwd = File.expand_path(Dir.pwd)
+    Dir.chdir @arc.project_path
+  end
+  
+  def teardown
+    Dir.chdir @pwd
   end
   
   

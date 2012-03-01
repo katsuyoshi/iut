@@ -8,13 +8,12 @@ $:.unshift(iut_path) unless
 require "arc"
 
 
-class TestArc < Test::Unit::TestCase
+class TestArcChangeSettings < Test::Unit::TestCase
 
   def setup
     project_path = File.join(File.expand_path(File.dirname(__FILE__)), "files", "IUTTest")
     @arc = Iut::Arc.new
     @arc.project_path = project_path
-#p project_path
   end
   
   def teardown
