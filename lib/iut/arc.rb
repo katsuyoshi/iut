@@ -58,6 +58,10 @@ module Iut
         Dir.glob("**/project.pbxproj") do |f|
           lines = []
           xcbuild_config_section = false
+          
+          # backup
+          FileUtils.cp f, "#{f}.#{ Time.now.strftime('%Y%m%d-%H%M%S') }"
+          
           context = File.read f
           seted_arc_project_setting = /CLANG_ENABLE_OBJC_ARC/ =~ context
           context.each_line do |l|
@@ -84,6 +88,35 @@ module Iut
             f.write lines.join
           end
         end
+      end
+    end
+    
+    def revert
+      Dir.chdir self.project_path do
+        files = []
+        Dir.glob("**/project.pbxproj.*") do |f|
+          files << f if /project.pbxproj.\d{8}\-\d{6}/ =~ f
+        end
+        unless files.size == 0
+          FileUtils.cp files.sort.reverse.first, Dir.glob("**/project.pbxproj").first
+        end
+      end
+    end
+    
+    def self.parse
+      opt = OptionParser.new
+      options = {}
+      opt.on('-p', '--project PROJECT', 'Set project path PROJECT.') {|v| options[:PROJECT] = v }
+      opt.parse!(ARGV)
+
+      arc = self.new
+      arc.project_path = options[:PROJECT] if options[:PROJECT]
+
+      case ARGV[1]
+      when /revert/
+        arc.revert
+      else
+        arc.change_project_settings
       end
     end
     

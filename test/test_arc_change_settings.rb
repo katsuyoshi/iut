@@ -7,6 +7,7 @@ $:.unshift(iut_path) unless
 
 require "arc"
 
+
 class TestArc < Test::Unit::TestCase
 
   def setup
@@ -19,6 +20,9 @@ class TestArc < Test::Unit::TestCase
   def teardown
     Dir.chdir @arc.project_path do
       FileUtils.cp "IUTTest.xcodeproj/project.pbxproj.org", "IUTTest.xcodeproj/project.pbxproj"
+      Dir.glob("IUTTest.xcodeproj/project.pbxproj.2*") do |f|
+        FileUtils.rm f
+      end
     end
   end
   
@@ -41,5 +45,40 @@ class TestArc < Test::Unit::TestCase
       assert_equal File.read("IUTTest.xcodeproj/project.pbxproj.expected"), File.read("IUTTest.xcodeproj/project.pbxproj")
     end
   end
+  
+  def test_arc_parse_change_project_settings
+    ARGV.replace ['arc', '-p', @arc.project_path]
+    Iut::Arc.parse
+    Dir.chdir @arc.project_path do
+      assert_equal File.read("IUTTest.xcodeproj/project.pbxproj.expected"), File.read("IUTTest.xcodeproj/project.pbxproj")
+    end
+  end
+  
+  def test_arc_make_backup
+    @arc.change_project_settings
+    Dir.chdir @arc.project_path do
+      files = Dir.glob("**/project.pbxproj.2*")
+      assert_equal 1, files.size
+    end
+  end
+  
+  def test_revert
+    @arc.change_project_settings
+    @arc.revert
+    Dir.chdir @arc.project_path do
+      assert_equal File.read("IUTTest.xcodeproj/project.pbxproj.org"), File.read("IUTTest.xcodeproj/project.pbxproj")
+    end
+  end
+  
+  def test_arc_parse_revert
+    @arc.change_project_settings
+    ARGV.replace ['arc', 'revert', '-p', @arc.project_path]
+    Iut::Arc.parse
+    Dir.chdir @arc.project_path do
+      assert_equal File.read("IUTTest.xcodeproj/project.pbxproj.org"), File.read("IUTTest.xcodeproj/project.pbxproj")
+    end
+  end
+  
+  
 end
 
