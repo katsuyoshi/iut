@@ -13,21 +13,24 @@ opt = OptionParser.new
 opt.on('-p', '--project PROJECT', 'Set project path PROJECT.') {|v| v }
 
 opt.banner = <<EOF
-Usage: iut [command] [subcommand] [options] [TEST_PROJECT_NAME]
+Usage:
+  Makes a iUnitTest's empty project named TEST_PROJECT_NAME.
 
-Commands are:
-              Nothing command, makes a empty project of iUnitTest.
-              The project name is specified by TEST_PROJECT_NAME.
-  arc         Set a compile flag to use ARC. And scanned all files.
-              If a class doesn't use ARC, set a compile flag
-              -fno-objc-arc to the class.
-  arc revert  Revert a previous arc command
+    iut TEST_PROJECT_NAME
+  
+  Set the compile option Automatic Refarence counting to YES.
+  And scanned all files.
+  If a class doesn't use ARC, set a compile flag -fno-objc-arc to the class.
 
-ex)
- $ iut TestProject    It makes iUnitTest's empty project TestProject.
- $ iut arc            Set a compile flag to use ARC.
- $ iut arc revert     Revert a previous arc command.
+    iut arc [subcommand] [options] 
 
+  subcommands are:
+              Nothing subcommand, set compile flags of ARC.
+              It makes backup file.
+    revert    Revert a project from previous arc command's backup.
+    clean     Remove all backup files.
+
+  options are:
 EOF
 
 #opt.on('-h', '--help', 'show this help message and exit') {|v| }
