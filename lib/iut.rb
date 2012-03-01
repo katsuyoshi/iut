@@ -9,6 +9,8 @@ require "iut/generator"
 Version = "#{Iut::VERSION} (template #{Iut::TEMPLATE_VERSION})"
 
 opt = OptionParser.new
+opt.on('-p', '--project PROJECT', 'Set project path PROJECT.') {|v| v }
+
 opt.banner = <<EOF
 Usage: iut [command] [subcommand] [options] [TEST_PROJECT_NAME]
 
@@ -16,7 +18,8 @@ Commands are:
               Nothing command, makes a empty project of iUnitTest.
               The project name is specified by TEST_PROJECT_NAME.
   arc         Set a compile flag to use ARC. And scanned all files.
-              If a class doesn't use ARC, set a compile flag -fno-objc-arc to the class.
+              If a class doesn't use ARC, set a compile flag
+              -fno-objc-arc to the class.
   arc revert  Revert a previous arc command
 
 ex)
