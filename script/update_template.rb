@@ -42,7 +42,7 @@ Dir.chdir(dst_path) do
   sha = g.log.first.sha[0, 7]
   File.open("../lib/iut/template_version.rb", "w") do |f|
     f.write <<EOF
-# -*- encoding:UTF-8 -*-
+# -*- coding:UTF-8 -*-
 module Iut
   TEMPLATE_VERSION = "#{sha}"
 end
